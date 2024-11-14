@@ -252,6 +252,116 @@ input[id="radio-3"]:checked ~ .glider {
   }
 }
 
+/* EXPERIENCE */
+
+ol {
+  list-style-type: none;
+}
+
+.title-wrapper{
+  background: var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.title-wrapper h3{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 100px;
+  padding: 5px;
+}
+
+.timeline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.timeline-item-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; 
+}
+
+.timeline-item-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: auto;
+  width: auto;
+}
+
+.timeline-item-right img {
+  max-height: 50px;
+  width: auto;
+}
+
+.timeline { margin-bottom: 30px; }
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.timeline-list {
+  font-size: 12px;
+  font-weight: 200;
+  margin-left: 45px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+.timeline-item-title {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-list span {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--secondary-color);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--secondary-color);
+}
+
+.timeline-text {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+
 /* PROJECTS */
 
 
@@ -335,8 +445,32 @@ input[id="radio-3"]:checked ~ .glider {
   background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
+.card--site .card__img, .card--site .card__img--hover {
+  background-image: url('images/projects/site.png');
+}
+
 .card--exo .card__img, .card--exo .card__img--hover {
   background-image: url('images/projects/qatar.png');
+}
+
+.card--tgf .card__img, .card--tgf .card__img--hover {
+  background-image: url('images/projects/tgf.png');
+}
+
+.card--mta .card__img, .card--mta .card__img--hover {
+  background-image: url('images/projects/mta.png');
+}
+
+.card--factory .card__img, .card--factory .card__img--hover {
+  background-image: url('images/projects/factory.png');
+}
+
+.card--toy .card__img, .card--toy .card__img--hover {
+  background-image: url('images/projects/factoytory.png');
+}
+
+.card--truck .card__img, .card--truck .card__img--hover {
+  background-image: url('images/projects/truck.png');
 }
 
 .card__img {
